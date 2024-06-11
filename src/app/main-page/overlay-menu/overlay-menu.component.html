@@ -1,0 +1,23 @@
+<app-header (showMenu)="setShowMenu($event)"></app-header>
+@if (showMenu) {
+<div class="main_container">
+    <div class="link_container">
+        @for (text of anchorLinkText; track $index) {
+        <div class="link_box">
+
+
+            <h2>{{text}}</h2>
+
+
+        </div>
+        }
+
+    </div>
+    <div class="lower_box">
+        <!-- <img src="./assets/img/triangle.png" alt=""> -->
+        <h3>Say Hi!</h3>
+        <p>marcus_harder&#64;gmx.de</p>
+    </div>
+
+</div>
+}

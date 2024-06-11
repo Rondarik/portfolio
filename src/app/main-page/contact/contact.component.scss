@@ -1,0 +1,26 @@
+.contact_container{
+    background-image: url("../../../assets/img/Rectangle 5.svg");
+    background-repeat: no-repeat;
+    height: 1064px;
+    width: 100%;
+    max-width: 1440px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+}
+
+.contact_box {
+    height: 800px;
+    h3{
+        color: #FFFCF3;
+        font-size: 78px;
+        font-weight: 800;
+        font-family: 'Syne';
+        margin: 0;
+    }
+    p {
+        color: #FF9900;
+    }
+}

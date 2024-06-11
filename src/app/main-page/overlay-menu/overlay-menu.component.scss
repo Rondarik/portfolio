@@ -1,0 +1,53 @@
+.main_container {
+    position: absolute;
+    height: calc(100vh - 92px);
+    width:100%;
+    max-width: 1440px;
+    background-color: #FFFCF3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.link_container {
+    height: 68%;
+}
+
+.link_box{
+    height: 167px;
+
+    h2{
+        margin: 0;
+        font-size: 96px;
+        font-weight: 700;
+        font-family: 'Syne';
+        cursor: pointer;
+    }
+}
+
+.lower_box{
+    height: 32%;
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+
+    h3{
+        color: #FFFCF3;
+        font-size: 78px;
+        font-weight: 800;
+        font-family: 'Syne';
+        margin: 0;
+    }
+    p {
+        color: #FFFCF3;
+        font-size: 23px;
+        font-weight: 300;
+        font-family: 'Overpass';
+        margin: 0;
+    }
+    
+}

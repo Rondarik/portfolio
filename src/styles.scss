@@ -1,1 +1,108 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  background-color: #FFFCF3;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+
+}
+
+
+/* syne-regular - latin */
+@font-face {
+    font-display: swap; 
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/syne-v22-latin-regular.woff2') format('woff2'); 
+  }
+  /* syne-500 - latin */
+  @font-face {
+    font-display: swap; 
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./assets/fonts/syne-v22-latin-500.woff2') format('woff2'); 
+  }
+  /* syne-600 - latin */
+  @font-face {
+    font-display: swap;
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./assets/fonts/syne-v22-latin-600.woff2') format('woff2');
+  }
+  /* syne-700 - latin */
+  @font-face {
+    font-display: swap; 
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./assets/fonts/syne-v22-latin-700.woff2') format('woff2'); 
+  }
+  /* syne-800 - latin */
+  @font-face {
+    font-display: swap; 
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 800;
+    src: url('./assets/fonts/syne-v22-latin-800.woff2') format('woff2'); 
+  }
+
+  .fontsyne{
+    font-family: 'Syne';
+  }
+
+  /* overpass-300 - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 300;
+  src: url('./assets/fonts/overpass-v13-latin-300.woff2') format('woff2'); 
+}
+/* overpass-regular - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/overpass-v13-latin-regular.woff2') format('woff2');
+}
+/* overpass-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./assets/fonts/overpass-v13-latin-500.woff2') format('woff2'); 
+}
+/* overpass-600 - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./assets/fonts/overpass-v13-latin-600.woff2') format('woff2'); 
+}
+/* overpass-700 - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./assets/fonts/overpass-v13-latin-700.woff2') format('woff2'); 
+}
+/* overpass-800 - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 800;
+  src: url('./assets/fonts/overpass-v13-latin-800.woff2') format('woff2'); 
+}
+
+.fontoverpass {
+  font-family: 'Overpass';
+}

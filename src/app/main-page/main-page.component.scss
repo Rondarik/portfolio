@@ -1,0 +1,32 @@
+h1 {
+    color: #000000;
+    font-size: 128px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.headline{
+    max-width: 1440px;
+    background-color: #FFFCF3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100vh;
+    width: 100%;
+}
+
+.my_name{
+    margin: 0;
+    font-weight: 700;
+    font-size: 48px;
+    color: #FF9900;
+
+}
+
+@media (max-width: 1080px) {
+    h1{
+        font-size: 80px;
+    }
+}
