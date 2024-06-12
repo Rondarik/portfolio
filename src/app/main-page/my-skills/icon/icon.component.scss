@@ -1,0 +1,61 @@
+.icon_container {
+    width: 80%;
+    max-width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.icon_image {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 20px;
+    margin-block: 20px;
+
+    font-family: 'Overpass';
+    font-weight: 700;
+    font-size: 16px;
+
+    &:hover {
+        color: #FF9900;
+        font-weight: 800;
+    }
+
+    img {
+        width: 75px;
+        height: 75px;
+
+        &:hover {
+            animation: wiggle 2s linear infinite;
+        }
+    }   
+}
+
+  
+  /* Keyframes */
+  @keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
