@@ -1,14 +1,18 @@
-.header {
-    height: 92px;
+.header_container {
+    position: fixed;
     width: 100%;
     max-width: 1440px;
+    z-index: 999;
+}
+
+.header {
+    height: 92px;
     background-color: #FFFCF3;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    // position: absolute;
 }
+
 .logo {
     height: 32px;
     margin-left: 16px;

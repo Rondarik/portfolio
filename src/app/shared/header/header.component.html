@@ -1,6 +1,15 @@
-<div class="header">
-    <img class="logo" src="../../../assets/img/logo1.png" alt="logo" style="margin-left: 100px;">
+<div class="header_container">
 
-    <img (click)="sendShowMenu()" src="../../../assets/img/burger menu S3.svg" alt="menu" style="height: 32px; width: 40px; margin-right: 100px; cursor: pointer;">
+    <div class="header">
+        <a href="#top"><img class="logo" src="../../../assets/img/logo1.png" alt="logo" style="margin-left: 100px;"></a>
+     
+    
+        <img (click)="toggleMenu()" src="../../../assets/img/burger menu S3.svg" alt="menu"
+            style="height: 32px; width: 40px; margin-right: 100px; cursor: pointer;">
+
+    </div>
+
+    @if (showMenu) {
+        <app-overlay-menu (setMenu)="closeMenu($event)"></app-overlay-menu>
+        }
 </div>
-

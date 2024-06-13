@@ -1,23 +1,32 @@
-import { Component,EventEmitter,Output } from '@angular/core';
+import { Component, Renderer2} from '@angular/core';
+import { OverlayMenuComponent } from './overlay-menu/overlay-menu.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
+  imports: [OverlayMenuComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+
+  constructor (private renderer: Renderer2){}
   
-  setMenu = false;
-  @Output()showMenu = new EventEmitter<boolean>();
+  showMenu = false;
   
-  sendShowMenu(){
-    if (this.setMenu){
-      this.setMenu = false;
+  toggleMenu(){
+    if (this.showMenu){
+      this.showMenu = false;
+      this.renderer.removeStyle(document.body, 'overflow');
     }else {
-      this.setMenu = true;
+      this.showMenu = true;
+      this.renderer.setStyle(document.body, 'overflow', 'hidden');
     }
-    this.showMenu.emit(this.setMenu);
   }
+
+  closeMenu(value:boolean){
+    this.showMenu = value;
+    this.renderer.removeStyle(document.body, 'overflow');
+  }
+
 }
