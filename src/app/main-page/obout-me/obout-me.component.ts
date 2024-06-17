@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-obout-me',
   standalone: true,
@@ -8,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './obout-me.component.scss'
 })
 export class OboutMeComponent {
+
+
 
 }

@@ -1,11 +1,12 @@
-<div class="header_container">
+<div class="header_container ">
 
     <div class="header">
-        <a href="#top"><img class="logo" src="../../../assets/img/logo1.png" alt="logo" style="margin-left: 100px;"></a>
+        <a href="#top"><img class="logo " src="../../../assets/img/logo1.png" alt="logo" [ngStyle]="{'margin-left.px': showMenu ? space-4.5 : space}" ></a>
      
     
         <img (click)="toggleMenu()" src="../../../assets/img/burger menu S3.svg" alt="menu"
-            style="height: 32px; width: 40px; margin-right: 100px; cursor: pointer;">
+            [ngStyle]="{'margin-right.px': showMenu ? space+5 : space}"
+            style="height: 32px; width: 40px; cursor: pointer;">
 
     </div>
 
@@ -13,3 +14,6 @@
         <app-overlay-menu (setMenu)="closeMenu($event)"></app-overlay-menu>
         }
 </div>
+
+
+<!-- style="margin-left: 100px;"  -->

@@ -1,12 +1,13 @@
 import { Component, Output, EventEmitter } from '@angular/core';
 import { HeaderComponent } from '../header.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
     selector: 'app-overlay-menu',
     standalone: true,
     templateUrl: './overlay-menu.component.html',
     styleUrl: './overlay-menu.component.scss',
-    imports: [ HeaderComponent]
+    imports: [ HeaderComponent, CommonModule]
 })
 export class OverlayMenuComponent {
 
