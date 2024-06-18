@@ -14,7 +14,6 @@ h2:hover{
     flex-direction: column;
     align-items: center;
     max-width: 1440px;
-
 }
 
 .content_box {
@@ -51,15 +50,16 @@ h2:hover{
         cursor: pointer;
         align-self: center;
     }
+
     a:hover {
         width: 207px;
-        font-weight: 400;
+        font-weight: 600;
     }
-    
 }
 
 .right_box {
     top: 20px;
+    margin-bottom: 350px;
     transform:translate(0,140px);
     img{
         width: 500px;
@@ -68,7 +68,6 @@ h2:hover{
 
 .border_container {
     position: relative;
-   
 }
 
 .border_container:hover::before{
@@ -79,5 +78,4 @@ h2:hover{
     width: 100%;
     height: 100%;
     border: 4px solid #000000;
-  
 }
