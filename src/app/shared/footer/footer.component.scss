@@ -1,0 +1,47 @@
+.footer_container {
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 48px;
+
+    a {
+        font-family: 'Overpass';
+        font-weight: 400;
+        font-size: 16px;
+        align-self: end;
+        color: #FFFCF3;
+        text-decoration: none;
+        margin-right: 100px;
+    }
+}
+
+.footer_box{
+    width: 100%;
+    max-width: 1240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.logo_box {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+    color: #FFFCF3;
+    img {
+        height: 32px;
+        width: 92px;
+        margin-bottom: 17px;
+    }
+}
+
+.icon_box {
+    display: flex;
+    height: 30px;
+    gap: 40px;
+    margin-bottom: 20px;
+}

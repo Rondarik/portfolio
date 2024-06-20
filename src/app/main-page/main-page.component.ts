@@ -5,11 +5,12 @@ import { MySkillsComponent } from './my-skills/my-skills.component';
 import { HeaderComponent } from '../shared/header/header.component';
 import { ContactComponent } from './contact/contact.component';
 import { IntroductionComponent } from './introduction/introduction.component';
+import { FooterComponent } from '../shared/footer/footer.component';
 
 @Component({
   selector: 'app-main-page',
   standalone: true,
-  imports: [PortfolioComponent, OboutMeComponent, MySkillsComponent, HeaderComponent, ContactComponent, IntroductionComponent],
+  imports: [PortfolioComponent, OboutMeComponent, MySkillsComponent, HeaderComponent, ContactComponent, IntroductionComponent, FooterComponent],
   templateUrl: './main-page.component.html',
   styleUrl: './main-page.component.scss'
 })

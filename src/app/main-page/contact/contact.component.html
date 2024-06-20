@@ -9,7 +9,6 @@
 
 
             <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-
                 <label class="lable_name" for="fname">Your name</label>
                 <input class="form_input name_input" #name="ngModel" [(ngModel)]="contactData.name" type="text" id="fname" name="firstname" required>
                 @if (!name.valid && name.touched && !name.disabled) {
@@ -34,7 +33,6 @@
                 } @else {
                     <input class="submit_input submit_input_grey" type="submit" value="Send message" disabled>
                 }
-                
               </form>
 
 
