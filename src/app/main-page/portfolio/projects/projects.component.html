@@ -2,14 +2,14 @@
 <div class="project_box">
     <div class="number_of_project" [ngClass]="project.reverse ? 'reverse_number':''">{{$index +1}}/{{projects.length}}</div>
     <div class="project" [ngClass]="project.reverse ? 'reverse':''">
-        <div class="border_box_for_img">
+        <div class="border_box_for_img" (click)="onNavigate(project.PageLink)">
             <img src={{project.image}} alt="project join image">
         </div>
         <div class="project_discription">
             <h3>{{project.name}}</h3>
             <div>{{project.skills}}</div>
             <span>{{project.discription}}</span>
-            <a href="#">{{project.buttonText}}</a>
+            <a (click)="onNavigate(project.gitHubLink)">{{project.buttonText}}</a>
         </div>
     </div>
 </div>

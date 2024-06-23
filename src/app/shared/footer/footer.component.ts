@@ -9,4 +9,7 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
+  onNavigate(buttonLink:string){
+    window.open(buttonLink, "_blank");
+  }
 }

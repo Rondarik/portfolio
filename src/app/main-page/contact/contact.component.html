@@ -4,40 +4,59 @@
         <p>Want to discuss a new project?</p>
         <span>Say hello! let's discuss your ideas and make it happen</span>
         <div class="contact_box">
-
-
-
-
             <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                 <label class="lable_name" for="fname">Your name</label>
-                <input class="form_input name_input" #name="ngModel" [(ngModel)]="contactData.name" type="text" id="fname" name="firstname" required>
+                <div class="input_box">
+                    <input class="form_input name_input" #name="ngModel" [(ngModel)]="contactData.name" type="text"
+                        id="fname" name="firstname" required>
+                    @if (!name.valid && name.touched && !name.disabled) {
+                    <img class="token" src="./assets/img/wrong.svg" alt="">
+                    } @else if (name.valid ) {
+                    <img class="token" src="./assets/img/good.svg" alt="">
+                    }
+                </div>
                 @if (!name.valid && name.touched && !name.disabled) {
-                    <span class="error_subline">Please enter your name</span>
+                <span class="error_subline">Please enter your name</span>
                 }
                 <label for="lname">Your email</label>
-                <input class="form_input" #email="ngModel" [(ngModel)]="contactData.email" type="text" id="lname" name="lastname" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+                <div class="input_box">
+                    <input class="form_input" #email="ngModel" [(ngModel)]="contactData.email" type="text" id="lname"
+                        name="lastname" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+                    @if (!email.valid && email.touched && !email.disabled) {
+                    <img class="token" src="./assets/img/wrong.svg" alt="">
+                    } @else if (email.valid ) {
+                    <img class="token" src="./assets/img/good.svg" alt="">
+                    }
+                </div>
                 @if (!email.valid && email.touched && !email.disabled) {
-                    <span class="error_subline">Please enter an email address</span>
+                <span class="error_subline">Please enter an email address</span>
                 }
                 <label for="subject">Your message</label>
-                <textarea #message="ngModel" [(ngModel)]="contactData.message" id="subject" name="subject" style="height:200px" required></textarea>
+                <div class="input_box">
+                    <textarea #message="ngModel" [(ngModel)]="contactData.message" id="subject" name="subject"
+                        style="height:200px" required></textarea>
+                    @if (!message.valid && message.touched && !message.disabled) {
+                    <img class="token" src="./assets/img/wrong.svg" alt="">
+                    } @else if (message.valid ) {
+                    <img class="token" src="./assets/img/good.svg" alt="">
+                    }
+                </div>
                 @if (!message.valid && message.touched && !message.disabled) {
-                    <span class="error_subline">Please enter a message</span>
+                <span class="error_subline">Please enter a message</span>
                 }
                 <div class="checkbox">
                     <input type="checkbox" [(ngModel)]="checked" [ngModelOptions]="{standalone: true}">
-                    <span>I've read the <a [routerLink]="['privacy-policy']">privacy policy</a> and agree to the processing of my data as outlined.</span>
+                    <span>I've read the <a [routerLink]="['privacy-policy']">privacy policy</a> and agree to the
+                        processing of my data as outlined.</span>
                 </div>
                 @if (name.valid && email.valid && message.valid && checked) {
-                    <input class="submit_input" type="submit" value="Send message">
+                <input class="submit_input" type="submit" value="Send message">
                 } @else {
-                    <input class="submit_input submit_input_grey" type="submit" value="Send message" disabled>
+                <input class="submit_input submit_input_grey" type="submit" value="Send message" disabled>
                 }
-              </form>
-
-
-
-
-
+            </form>
+        </div>
+     
     </div>
+    <a class="arrow_up" href="#top"><img src="./assets/img/arrow-up.svg" alt="arrow-up"></a>
 </div>

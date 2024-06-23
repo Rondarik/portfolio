@@ -22,4 +22,8 @@ export class OverlayMenuComponent {
     this.setMenu.emit(false);
   }
 
+  onNavigate(buttonLink:string){
+    window.open(buttonLink, "_blank");
+  }
+
 }

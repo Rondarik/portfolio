@@ -26,6 +26,7 @@ h3 {
 .border_box_for_img {
     position: relative;
     z-index: 10;
+    cursor: pointer;
 }
 
 .project_box:hover {
@@ -100,6 +101,7 @@ h3 {
         font-weight: 400;
         font-size: 23px;
         transition: width 0.25s;
+        cursor: pointer;
     }
 
     a:hover {

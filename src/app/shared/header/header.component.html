@@ -1,13 +1,15 @@
 <div class="header_container ">
-
     <div class="header">
-        <a href="#top"><img class="logo " src="../../../assets/img/logo1.png" alt="logo" [ngStyle]="{'margin-left.px': showMenu ? space-4.5 : space}" ></a>
-     
-    
-        <img (click)="toggleMenu()" src="../../../assets/img/burger menu S3.svg" alt="menu"
+        <a href="#top"><img class="logo " src="../../../assets/img/logo1.png" alt="logo" [ngStyle]="{'margin-left.px': showMenu ? space-4.5 : space}"></a>
+        @if (showMenu) {
+        <img (click)="toggleMenu()" src="../../../assets/img/Property 1=Variant5.svg" alt="menu"
             [ngStyle]="{'margin-right.px': showMenu ? space+5 : space}"
             style="height: 32px; width: 40px; cursor: pointer;">
-
+        } @else {
+            <img (click)="toggleMenu()" src="../../../assets/img/burger menu S3.svg" alt="menu"
+            [ngStyle]="{'margin-right.px': showMenu ? space+5 : space}"
+            style="height: 32px; width: 40px; cursor: pointer;">
+        }
     </div>
 
     @if (showMenu) {
@@ -15,5 +17,3 @@
         }
 </div>
 
-
-<!-- style="margin-left: 100px;"  -->
