@@ -8,7 +8,7 @@
         <div class="project_discription">
             <h3>{{project.name}}</h3>
             <div>{{project.skills}}</div>
-            <span>{{project.discription}}</span>
+            <span>{{project.discription | translate}}</span>
             <a (click)="onNavigate(project.gitHubLink)">{{project.buttonText}}</a>
         </div>
     </div>

@@ -1,0 +1,29 @@
+{
+    "Developer": "Entwickler",
+
+    "AboutMe": "Über mich",
+    "AboutMe_text1": "Als Junior Software Entwickler habe ich solide Kenntnisse in JavaScript und Angular. Die Entwicklung von Software begleitet mich schon mein gesamtes Berufsleben. Angefangen mit der Programmierung von SPS in der Ausbildung, habe ich im Studium gefallen an Hochsprachen gefunden. In meiner Freizeit beschäftige ich mich mit C/C++ und Qt.",
+    "AboutMe_text2": "Wenn Sie glauben, dass ich gut zu Ihrem Projekt passen würde, kontaktieren Sie mich!",
+
+    "MySkills": "Meine Skills",
+
+    "portfolioText": "Entdecken Sie eine Auswahl meiner Arbeiten und gewinnen Sie Einblick in meine Fähigkeiten durch die Betrachtung meiner Projekte.",
+    "projectDiscription1": "Aufgabenmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzern und Kategorien zu.",
+    "projectDiscription2": "Jump'n'Run Spiel basierend auf einem objektorientierten Ansatz. Helfen Sie Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.",
+    "projectDiscription3": "Basierend auf der PokéAPI: Eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert.",
+
+    "wantToDiscuss": "Möchten Sie ein neues Projekt besprechen?",
+    "sayHello": "Sag Hallo! Lass Sie uns Ihre Ideen besprechen und sie verwirklichen",
+    "name":"Dein Name",
+    "email":"Deine Email",
+    "message": "Deine Nachricht",
+    "errName": "Bitte geben Sie Ihren Namen ein",
+    "errEmail": "Bitte geben Sie eine gültige EMail-Adresse ein",
+    "errMessage": "Bitte geben Sie eine Nachricht ein",
+    "readPolicy1": "Ich habe die",
+    "readPolicy2": "Datenschutzerklärung",
+    "readPolicy3": "gelesen und akzeptiere die Bedingungen",
+    "sendMessage": "Nachricht senden",
+    "impress": "Impressum"
+
+}

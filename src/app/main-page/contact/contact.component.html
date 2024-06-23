@@ -1,11 +1,11 @@
 <div class="contact_container">
     <h3>Say Hi!</h3>
     <div class="masage_box">
-        <p>Want to discuss a new project?</p>
-        <span>Say hello! let's discuss your ideas and make it happen</span>
+        <p>{{'wantToDiscuss' | translate}}</p>
+        <span>{{'sayHello' | translate}}</span>
         <div class="contact_box">
             <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-                <label class="lable_name" for="fname">Your name</label>
+                <label class="lable_name" for="fname">{{'name' | translate}}</label>
                 <div class="input_box">
                     <input class="form_input name_input" #name="ngModel" [(ngModel)]="contactData.name" type="text"
                         id="fname" name="firstname" required>
@@ -16,9 +16,9 @@
                     }
                 </div>
                 @if (!name.valid && name.touched && !name.disabled) {
-                <span class="error_subline">Please enter your name</span>
+                <span class="error_subline">{{'errName' | translate}}</span>
                 }
-                <label for="lname">Your email</label>
+                <label for="lname">{{'email' | translate}}</label>
                 <div class="input_box">
                     <input class="form_input" #email="ngModel" [(ngModel)]="contactData.email" type="text" id="lname"
                         name="lastname" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
@@ -29,9 +29,9 @@
                     }
                 </div>
                 @if (!email.valid && email.touched && !email.disabled) {
-                <span class="error_subline">Please enter an email address</span>
+                <span class="error_subline">{{'errEmail' | translate}}</span>
                 }
-                <label for="subject">Your message</label>
+                <label for="subject">{{'message' | translate}}</label>
                 <div class="input_box">
                     <textarea #message="ngModel" [(ngModel)]="contactData.message" id="subject" name="subject"
                         style="height:200px" required></textarea>
@@ -42,17 +42,16 @@
                     }
                 </div>
                 @if (!message.valid && message.touched && !message.disabled) {
-                <span class="error_subline">Please enter a message</span>
+                <span class="error_subline">{{'errMessage' | translate}}</span>
                 }
                 <div class="checkbox">
                     <input type="checkbox" [(ngModel)]="checked" [ngModelOptions]="{standalone: true}">
-                    <span>I've read the <a [routerLink]="['privacy-policy']">privacy policy</a> and agree to the
-                        processing of my data as outlined.</span>
+                    <span>{{'readPolicy1' | translate}}<a [routerLink]="['privacy-policy']">{{'readPolicy2' | translate}}</a> {{'readPolicy3' | translate}}</span>
                 </div>
                 @if (name.valid && email.valid && message.valid && checked) {
                 <input class="submit_input" type="submit" value="Send message">
                 } @else {
-                <input class="submit_input submit_input_grey" type="submit" value="Send message" disabled>
+                <input class="submit_input submit_input_grey" type="submit" value="{{'sendMessage' | translate}}" disabled>
                 }
             </form>
         </div>
