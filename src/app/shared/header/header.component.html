@@ -1,19 +1,25 @@
 <div class="header_container ">
     <div class="header">
-        <a href="#top"><img class="logo " src="../../../assets/img/logo1.png" alt="logo" [ngStyle]="{'margin-left.px': showMenu ? space-4.5 : space}"></a>
-        @if (showMenu) {
-        <img (click)="toggleMenu()" src="../../../assets/img/Property 1=Variant5.svg" alt="menu"
-            [ngStyle]="{'margin-right.px': showMenu ? space+5 : space}"
-            style="height: 32px; width: 40px; cursor: pointer;">
-        } @else {
+        <a href="#top"><img class="logo " src="../../../assets/img/logo1.png" alt="logo"
+                [ngStyle]="{'margin-left.px': showMenu ? space-4.5 : space}"></a>
+        <div class="header_right_box" [ngStyle]="{'margin-right.px': showMenu ? space+5 : space}">
+            @if (showMenu) {
+            <img (click)="toggleMenu()" src="../../../assets/img/Property 1=Variant5.svg" alt="menu"
+                
+                style="height: 32px; width: 40px; cursor: pointer;">
+            } @else {
             <img (click)="toggleMenu()" src="../../../assets/img/burger menu S3.svg" alt="menu"
-            [ngStyle]="{'margin-right.px': showMenu ? space+5 : space}"
-            style="height: 32px; width: 40px; cursor: pointer;">
-        }
+               
+                style="height: 32px; width: 40px; cursor: pointer;">
+            }
+            <div class="language_box">
+                <p (click)="translate.switchLanguage('en')">EN|</p>
+                <p (click)="translate.switchLanguage('de')">DE</p>
+            </div>
+        </div>
     </div>
 
     @if (showMenu) {
-        <app-overlay-menu (setMenu)="closeMenu($event)"></app-overlay-menu>
-        }
+    <app-overlay-menu (setMenu)="closeMenu($event)"></app-overlay-menu>
+    }
 </div>
-

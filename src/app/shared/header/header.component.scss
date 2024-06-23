@@ -21,3 +21,23 @@
     height: 32px;
     margin-left: 16px;
 }
+
+.header_right_box{
+    display: flex;
+    align-items: center;
+
+    img{
+        margin-right: 50px;
+    }
+}
+
+.language_box{
+    display: flex;
+    font-family: 'Overpass';
+    font-weight: 400;
+    font-size: 23px;
+
+    p{
+        cursor: pointer;
+    }
+}
