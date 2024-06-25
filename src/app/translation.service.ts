@@ -10,7 +10,18 @@ export class TranslationService {
     translate.setDefaultLang('en');
    }
 
+   germanLangAktiv = false;
+
    public switchLanguage(language: string): void{
     this.translate.use(language);
+    this.toggleLang();
+   }
+
+   toggleLang(){
+    if (this.germanLangAktiv) {
+      this.germanLangAktiv = false;
+    } else {
+      this.germanLangAktiv = true;
+    }
    }
 }

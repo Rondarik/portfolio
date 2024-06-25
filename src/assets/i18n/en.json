@@ -3,7 +3,8 @@
 
     "AboutMe": "About me",
     "AboutMe_text1": "As a Junior Software Developer, I possess solid knowledge in JavaScript and Angular. Software development has been a constant throughout my professional life. Starting with programming PLCs during my apprenticeship, I developed an interest in high-level languages during my studies. In my free time, I work with C/C++ and Qt.",
-    "AboutMe_text2": "If you think I’d be a good match for your projects, contact me!",
+    "AboutMe_text2": "If you think I'd be a good match for your projects, contact me!",
+    "letsTalk": "Let's talk",
 
     "MySkills": "My Skills",
 
@@ -20,7 +21,7 @@
     "errName": "Please enter your name",
     "errEmail": "Please enter an email address",
     "errMessage": "Please enter a message",
-    "readPolicy1": "I've read the",
+    "readPolicy1": "I've read the ",
     "readPolicy2": "privacy policy",
     "readPolicy3": "and agree to the processing of my data as outlined.",
     "sendMessage": "Send message",

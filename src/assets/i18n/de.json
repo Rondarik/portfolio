@@ -4,6 +4,7 @@
     "AboutMe": "Über mich",
     "AboutMe_text1": "Als Junior Software Entwickler habe ich solide Kenntnisse in JavaScript und Angular. Die Entwicklung von Software begleitet mich schon mein gesamtes Berufsleben. Angefangen mit der Programmierung von SPS in der Ausbildung, habe ich im Studium gefallen an Hochsprachen gefunden. In meiner Freizeit beschäftige ich mich mit C/C++ und Qt.",
     "AboutMe_text2": "Wenn Sie glauben, dass ich gut zu Ihrem Projekt passen würde, kontaktieren Sie mich!",
+    "letsTalk": "Kontaktieren Sie mich",
 
     "MySkills": "Meine Skills",
 
@@ -20,7 +21,7 @@
     "errName": "Bitte geben Sie Ihren Namen ein",
     "errEmail": "Bitte geben Sie eine gültige EMail-Adresse ein",
     "errMessage": "Bitte geben Sie eine Nachricht ein",
-    "readPolicy1": "Ich habe die",
+    "readPolicy1": "Ich habe die ",
     "readPolicy2": "Datenschutzerklärung",
     "readPolicy3": "gelesen und akzeptiere die Bedingungen",
     "sendMessage": "Nachricht senden",

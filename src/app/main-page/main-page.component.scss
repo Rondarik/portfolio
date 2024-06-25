@@ -4,94 +4,14 @@
 }
 
 .main_content{
-    // width: 1440px;
+    width: 1440px;
     max-width: 1440px;
 }
 
 
-
-// h1 {
-//     color: #000000;
-//     font-size: 128px;
-//     font-weight: 800;
-//     margin: 0;
-// }
-
-// .headline {
-//     max-width: 1440px;
-//     background-color: #FFFCF3;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-
-//     height: 100vh;
-//     width: 100%;
-// }
-
-// .my_name {
-//     margin: 0;
-//     margin-left: 30px;
-//     font-weight: 700;
-//     font-size: 48px;
-//     color: #FF9900;
-// }
-
-// .nametag {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     width: 80%;
-// }
-
-// .line {
-//     height: 3px;
-//     width: 50%;
-//     background-color: #000000;
-// }
-
-// .scrolldown_box {
-//     width: 100%;
-//     max-width: 1240px;
-//     height: 30%;
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: end;
-
-//     p {
-//         font-family: 'Overpass';
-//         font-size: 23px;
-//         font-weight: 300;
-//         margin: 0;
-//     }
-// }
-
-// .mail_box{
-//     writing-mode: vertical-lr;
-//     transform: rotate(180deg);
-//     white-space: nowrap;
-// }
-
-// .arrow_box {
-//     width: 60px;
-//     img{
-//         margin-bottom: 6px;
-//         animation: moveUpDown 2s infinite ease-in-out;
-//     }
-// }
-
-// @keyframes moveUpDown {
-//   0%, 100% {
-//     transform: translateY(0);
-//   }
-//   50% {
-//     transform: translateY(-50px);
-//   }
-// }
-
-// @media (max-width: 1080px) {
-//     h1 {
-//         font-size: 80px;
-//     }
-// }
+@media (max-width: 1500px) {
+    .main_content {
+        width: 1000px;
+    }
+}
 

@@ -1,0 +1,17 @@
+.pp_contaier{
+    margin-left: 100px;
+    margin-right: 20px;
+    max-width: 1440px;
+}
+
+img{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    height: 50px;
+}
+
+@media (max-width: 800px) {
+    .pp_contaier{
+        margin-left: 20px;
+    }
+}
