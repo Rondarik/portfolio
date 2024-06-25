@@ -18,11 +18,6 @@ h3 {
     }
 }
 
-.reverse {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
 .border_box_for_img {
     position: relative;
     z-index: 10;
@@ -70,7 +65,7 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transform: translateX(-700px);
+    transform: translateX(-600px);
 
     div {
         font-family: 'Overpss';
@@ -117,6 +112,71 @@ h3 {
 
     .project_discription {
         margin: 0;
-        transform: translateX(700px);
+        transform: translateX(620px);
+    }
+}
+
+@media (max-width: 1500px) {
+    .project_discription {
+        margin: 0 0 0 90px;
+    }
+}
+
+@media (max-width: 1080px) {
+    h3 {
+        font-size: 24px;
+    }
+
+    .project_discription {
+        font-size: 18px;
+        // transform: translateY(-320px);
+        transform: translateY(40px);
+    }
+
+    .reverse {
+        .project_discription {
+            // transform: translateY(-320px);
+            transform: translateY(40px);
+            margin-left: 90px;
+        }
+    }
+
+    .number_of_project {
+        margin-bottom: 0;
+        font-size: 32px;
+    }
+
+    .project {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project_box:hover {
+        .project_discription {
+            transform: translateY(40px);
+        }
+    }
+
+}
+
+@media (max-width: 740px) {
+    .number_of_project {
+        font-size: 24px;
+    }
+
+    .project_box {
+        img {
+            width: 310px;
+            height: auto;
+        }
+    }
+
+    .project_box:hover {
+        .border_box_for_img::before {
+            border: none;
+            // width: 310px;
+            // height: 168px;
+            // transform: translate(0px, 20px);
+        }
     }
 }

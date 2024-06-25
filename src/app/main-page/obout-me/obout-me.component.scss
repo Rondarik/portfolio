@@ -5,7 +5,7 @@ h2 {
     margin: 0 0 48px 0;
 }
 
-h2:hover{
+h2:hover {
     color: #ff9900;
 }
 
@@ -22,13 +22,13 @@ h2:hover{
     max-width: 1240px;
 }
 
-.left_box{
+.left_box {
     display: flex;
     flex-direction: column;
     width: 55%;
 
     span {
-        margin-bottom: 58px ;
+        margin-bottom: 58px;
         font-family: 'Overpass';
         font-weight: 400;
         font-size: 23px;
@@ -71,7 +71,7 @@ h2:hover{
 .right_box {
     top: 20px;
     margin-bottom: 80px;
-    transform:translate(0,140px);
+    transform: translate(0, 140px);
     display: flex;
     flex-direction: column;
 }
@@ -84,12 +84,13 @@ h2:hover{
 
 .border_container {
     position: relative;
-    img{
+
+    img {
         width: 500px;
     }
 }
 
-.border_container:hover::before{
+.border_container:hover::before {
     content: '';
     position: absolute;
     top: 20px;
@@ -97,4 +98,53 @@ h2:hover{
     width: 100%;
     height: 100%;
     border: 4px solid #000000;
+}
+
+@media (max-width: 1500px) {
+    h2 {
+        font-size: 56px;
+    }
+
+    .border_container {
+        img {
+            width: 400px;
+        }
+    }
+}
+
+@media (max-width: 1080px) {
+    h2 {
+        font-size: 40px;
+    }
+
+    .content_box {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 740px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    .left_box{
+        span{
+            font-size: 18px;
+        }
+        a{
+            font-size: 14px;
+            font-weight: 800;
+        }
+    }
+
+    .arrow{
+        height: 100px;
+    }
+
+    .border_container {
+        img {
+            width: 200px;
+        }
+    }
 }

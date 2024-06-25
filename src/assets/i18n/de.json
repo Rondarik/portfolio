@@ -1,10 +1,13 @@
 {
+    "anchor1": "Über mich",
+    "anchor2": "Meine skills",
+    
     "Developer": "Entwickler",
 
     "AboutMe": "Über mich",
     "AboutMe_text1": "Als Junior Software Entwickler habe ich solide Kenntnisse in JavaScript und Angular. Die Entwicklung von Software begleitet mich schon mein gesamtes Berufsleben. Angefangen mit der Programmierung von SPS in der Ausbildung, habe ich im Studium gefallen an Hochsprachen gefunden. In meiner Freizeit beschäftige ich mich mit C/C++ und Qt.",
     "AboutMe_text2": "Wenn Sie glauben, dass ich gut zu Ihrem Projekt passen würde, kontaktieren Sie mich!",
-    "letsTalk": "Kontaktieren Sie mich",
+    "letsTalk": "Kontakt aufnehmen",
 
     "MySkills": "Meine Skills",
 

@@ -15,3 +15,14 @@
     }
 }
 
+@media (max-width: 1080px) {
+    .main_content {
+        width: 700px;
+    }
+}
+
+@media (max-width: 740px) {
+    .main_content {
+        width: 310px;
+    }
+}

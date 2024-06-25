@@ -58,3 +58,36 @@
         transform: scale(1.3);
     }
 }
+
+@media (max-width: 1500px) {
+    .footer_box{
+        max-width: 880px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .footer_box{
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 740px) {
+    .footer_container{
+        span{
+            margin: 0;
+            align-self: center;
+            margin-top: 30px;
+        }
+    }
+    .footer_box{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+
+        .logo_box{
+            gap: 20px;
+            align-items: center;
+            font-size: 18px;
+        }
+    }
+}

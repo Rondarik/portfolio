@@ -4,7 +4,7 @@ h2 {
     font-weight: 800;
     margin: 0 23px 35px 23px;
 
-    &:hover{
+    &:hover {
         color: #FF9900;
     }
 }
@@ -13,6 +13,7 @@ h2 {
     font-family: 'Overpass';
     font-size: 23px;
     font-weight: 400;
+    text-align: center;
 }
 
 .portfolio_container {
@@ -34,4 +35,32 @@ h2 {
     transform: rotate(45deg);
     align-self: flex-end;
     margin-right: 250px;
+}
+
+@media (max-width: 1500px) {
+    h2 {
+        font-size: 56px;
+    }
+}
+
+@media (max-width: 1080px) {
+    h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 740px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    .subline {
+        font-size: 18px;
+    }
+
+    .arrow{
+        height: 100px;
+        margin-right: 80px;
+        margin-bottom: 0;
+    }
 }

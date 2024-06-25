@@ -18,7 +18,7 @@ export class HeaderComponent {
   translate = inject(TranslationService);
   
   showMenu = false;
-  space = 100;
+  space = 6;
   
   toggleMenu(){
     if (this.showMenu){

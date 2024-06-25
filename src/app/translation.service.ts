@@ -7,10 +7,10 @@ import { TranslateService } from '@ngx-translate/core';
 export class TranslationService {
 
   constructor(private translate: TranslateService) {
-    translate.setDefaultLang('en');
+    translate.setDefaultLang('de');
    }
 
-   germanLangAktiv = false;
+   germanLangAktiv = true;
 
    public switchLanguage(language: string): void{
     this.translate.use(language);

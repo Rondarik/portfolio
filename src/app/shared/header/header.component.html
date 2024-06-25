@@ -1,6 +1,6 @@
 <div class="header_container ">
     <div class="header">
-        <a href="#top"><img class="logo " src="../../../assets/img/logo1.png" alt="logo"
+        <a href="#top" (click)="closeMenu(false)"><img class="logo " src="../../../assets/img/logo1.png" alt="logo"
                 [ngStyle]="{'margin-left.px': showMenu ? space-4.5 : space}"></a>
         <div class="header_right_box" [ngStyle]="{'margin-right.px': showMenu ? space+5 : space}">
             @if (showMenu) {

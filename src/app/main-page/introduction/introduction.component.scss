@@ -79,8 +79,27 @@ h1 {
   }
 }
 
+@media (max-width: 1500px) {
+    h1 {
+        font-size: 96px;
+    }
+}
+
 @media (max-width: 1080px) {
     h1 {
         font-size: 80px;
+    }
+    .my_name{
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 740px) {
+    h1 {
+        font-size: 32px;
+    }
+    .my_name{
+        font-size: 16px;
+        margin-left: 8px;
     }
 }

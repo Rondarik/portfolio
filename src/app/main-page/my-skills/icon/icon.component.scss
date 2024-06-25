@@ -60,3 +60,9 @@
       transform: rotateZ(0);
     }
   }
+
+  @media (max-width: 740px) {
+   .icon_container{
+    justify-content: center;
+   }
+}

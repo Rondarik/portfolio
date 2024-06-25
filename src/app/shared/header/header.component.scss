@@ -3,10 +3,7 @@
     width: 100%;
     max-width: 1440px;
     z-index: 999;
-}
-
-.right_space {
-    margin-right: 100px;
+   
 }
 
 .header {
@@ -15,6 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-inline: 94px;
 }
 
 .logo {
@@ -40,4 +38,36 @@
     p{
         cursor: pointer;
     }
+}
+
+
+@media (max-width: 1500px) {
+    .header_container {
+        max-width: 1000px;
+    }
+    
+}
+
+@media (max-width: 1080px) {
+    .header_container {
+        max-width: 700px;
+    }
+    .header{
+        padding-inline: 10px;
+    }
+    
+}
+
+@media (max-width: 740px) {
+    .header_container {
+        max-width: 318px;
+    }
+    .header{
+        padding-inline: 10px;
+    }
+    .logo {
+        height: 24px;
+        margin-left: 16px;
+    }
+    
 }
