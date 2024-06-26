@@ -28,6 +28,7 @@
     "readPolicy2": "privacy policy",
     "readPolicy3": "and agree to the processing of my data as outlined.",
     "sendMessage": "Send message",
-    "impress": "Legal notice"
+    "impress": "Legal notice",
+      "mailSuccessful": "email successfully sent"
 
 }

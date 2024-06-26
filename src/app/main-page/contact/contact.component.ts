@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component, Renderer2, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { PrivacyPolicyComponent } from '../../privacy-policy/privacy-policy.component';
@@ -19,24 +19,20 @@ export class ContactComponent {
   http = inject(HttpClient);
   ttranslate = inject(TranslationService);
 
+  constructor(private renderer: Renderer2) { }
+
   contactData = {
     name: '',
     email: '',
     message: '',
   }
 
-  checked:boolean = false;
-
-  test(){
-    console.log(this.checked);
-    
-  }
-
-
+  checked: boolean = false;
+  showMessage = false;
   mailTest = false;
 
   post = {
-    endPoint: 'https://marcus-harder.de/sendMail.php',    
+    endPoint: 'https://marcus-harder.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -52,6 +48,7 @@ export class ContactComponent {
         .subscribe({
           next: (response) => {
             // eingene Funktionen 
+            this.confirmationMessage();
             ngForm.resetForm();
             this.checked = false;
           },
@@ -63,9 +60,24 @@ export class ContactComponent {
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       // eigene Funktion auch hier (kopie von oben)
       console.log(this.contactData);
-      
+      this.confirmationMessage();
       ngForm.resetForm();
       this.checked = false;
+    }
+  }
+
+  confirmationMessage(){
+    this.showMessage = true;
+    this.renderer.setStyle(document.body, 'overflow', 'hidden');
+    setTimeout(() => {
+      this.closeMessage();
+    }, 2000);
+  }
+
+  closeMessage() {
+    if (this.showMessage) {
+      this.showMessage = false;
+      this.renderer.removeStyle(document.body, 'overflow');
     }
   }
 }

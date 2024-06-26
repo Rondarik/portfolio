@@ -181,6 +181,26 @@ h3 {
     margin-bottom: 24px;
 }
 
+.send_message {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    color: #FF9900;
+    font-family: 'Overpass';
+    font-weight: 700;
+    font-size: 18px;
+    align-self: center;
+border: 2px solid #FF9900;
+
+
+
+}
+
 @media (max-width: 1080px) {
     h3 {
         font-size: 56px;
@@ -201,7 +221,7 @@ h3 {
 }
 
 @media (max-width: 740px) {
-    h3{
+    h3 {
         font-size: 40px;
         margin-left: 10px;
     }
@@ -218,7 +238,8 @@ h3 {
             }
         }
     }
-    .arrow_up{
+
+    .arrow_up {
         align-self: center;
         margin-right: 0;
         margin-bottom: 50px;

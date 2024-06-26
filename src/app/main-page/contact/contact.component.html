@@ -28,6 +28,11 @@
                     <img class="token" src="./assets/img/good.svg" alt="">
                     }
                 </div>
+                @if (showMessage) {
+                    <div class="send_message" (click)="closeMessage()">
+                        {{'mailSuccessful' | translate}}
+                    </div>
+                    }
                 @if (!email.valid && email.touched && !email.disabled) {
                 <span class="error_subline">{{'errEmail' | translate}}</span>
                 }
@@ -46,16 +51,20 @@
                 }
                 <div class="checkbox">
                     <input type="checkbox" [(ngModel)]="checked" [ngModelOptions]="{standalone: true}">
-                    <span>{{'readPolicy1' | translate}}<a [routerLink]="['privacy-policy']">{{'readPolicy2' | translate}}</a> {{'readPolicy3' | translate}}</span>
+                    <span>{{'readPolicy1' | translate}}<a [routerLink]="['privacy-policy']">{{'readPolicy2' |
+                            translate}}</a> {{'readPolicy3' | translate}}</span>
                 </div>
+
+         
                 @if (name.valid && email.valid && message.valid && checked) {
                 <input class="submit_input" type="submit" value="Send message">
                 } @else {
-                <input class="submit_input submit_input_grey" type="submit" value="{{'sendMessage' | translate}}" disabled>
+                <input class="submit_input submit_input_grey" type="submit" value="{{'sendMessage' | translate}}"
+                    disabled>
                 }
             </form>
         </div>
-     
+   
     </div>
     <a class="arrow_up" href="#top"><img src="./assets/img/arrow-up.svg" alt="arrow-up"></a>
 </div>

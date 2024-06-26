@@ -28,6 +28,7 @@
     "readPolicy2": "Datenschutzerklärung",
     "readPolicy3": "gelesen und akzeptiere die Bedingungen",
     "sendMessage": "Nachricht senden",
-    "impress": "Impressum"
+    "impress": "Impressum",
+    "mailSuccessful": "E-Mail erfolgreich versendet"
 
 }
