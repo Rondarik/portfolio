@@ -5,8 +5,6 @@ h1 {
     margin: 0;
 }
 
-
-
 .headline {
     max-width: 1440px;
     background-color: #FFFCF3;
@@ -14,9 +12,16 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    gap: 70px;
     height: 100vh;
     width: 100%;
+}
+
+.headline_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .my_name {
@@ -101,5 +106,10 @@ h1 {
     .my_name{
         font-size: 16px;
         margin-left: 8px;
+    }
+    .arrow_box{
+        img{
+            width: 40px;
+        }
     }
 }

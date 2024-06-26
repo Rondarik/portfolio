@@ -166,7 +166,6 @@ h3 {
 
     .input_box {
         display: flex;
-        // align-items: center;
     }
 
     .token {
@@ -206,13 +205,11 @@ h3 {
         font-size: 40px;
         margin-left: 10px;
     }
-    .main_content {
-        width: 318px;
-    }
 
     .contact_box {
         .input_box {
-            width: 310px;
+            width: 298px;
+            align-self: center;
         }
 
         form {

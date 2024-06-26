@@ -53,12 +53,10 @@ export class ContactComponent {
           next: (response) => {
             // eingene Funktionen 
             ngForm.resetForm();
-            console.log("hier ist das Problem");
+            this.checked = false;
           },
           error: (error) => {
             console.error(error);
-            console.log("beim Fehler kommt er an");
-            
           },
           complete: () => console.info('send post complete'),
         });
