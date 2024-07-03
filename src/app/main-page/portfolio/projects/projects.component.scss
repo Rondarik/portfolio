@@ -65,10 +65,10 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transform: translateX(-600px);
+     transform: translateX(-620px);
 
     div {
-        font-family: 'Overpss';
+        font-family: 'Overpass';
         font-weight: 400;
         font-size: 23px;
         color: #FF9900;
@@ -76,7 +76,7 @@ h3 {
     }
 
     span {
-        font-family: 'Overpss';
+        font-family: 'Overpass';
         font-weight: 400;
         font-size: 16px;
         max-width: 500px;
@@ -129,13 +129,11 @@ h3 {
 
     .project_discription {
         font-size: 18px;
-        // transform: translateY(-320px);
         transform: translateY(40px);
     }
 
     .reverse {
         .project_discription {
-            // transform: translateY(-320px);
             transform: translateY(40px);
             margin-left: 90px;
         }
@@ -174,9 +172,6 @@ h3 {
     .project_box:hover {
         .border_box_for_img::before {
             border: none;
-            // width: 310px;
-            // height: 168px;
-            // transform: translate(0px, 20px);
         }
     }
 }
